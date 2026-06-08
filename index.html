@@ -62,7 +62,27 @@
 
     </div>
 
+    <div class="modal hidden">
+        <div id="modal-content">
+            <div>
+                <h2>Create new Task</h2>
+                <button class="cancelbtn">
+                    <i class="fa-solid fa-xmark crossmark"></i>
+                </button>
+                
+            </div>
 
+            <form id="form">
+                <input id="titleInput" required type="text" placeholder="Title..." autocomplete="off">
+                <textarea placeholder="Description..."></textarea>
+                <button type="submit">Add Task</button>
+            </form>
+
+        </div>
+    </div>
+
+
+    <div class="popup"></div>
 
 
     <script src="script.js"></script>
