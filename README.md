@@ -181,15 +181,15 @@ Planned enhancements:
 
 ### Main Board
 
-![Main Board](screenshots/board-view.png)
+![Main Board](Screenshots/board-view.png)
 
 ### Create Task Modal
 
-![Create Task Modal](screenshots/create-task.png)
+![Create Task Modal](Screenshots/create-task.png)
 
 ### Drag and Drop Workflow
 
-![Drag and Drop](screenshots/drag-drop.png)
+![Drag and Drop](Screenshots/drag-drop.png)
 
 ---
 
