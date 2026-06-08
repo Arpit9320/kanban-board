@@ -8,7 +8,7 @@ The project simulates a lightweight task management system where tasks can move 
 
 ## Live Demo
 
-🔗 Live Demo: Coming Soon
+🔗 Link: https://arpit9320.github.io/kanban-board/
 
 ---
 
