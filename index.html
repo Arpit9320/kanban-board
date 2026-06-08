@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="main">
+
+        <nav>
+            <div class="left">Kanban Board</div>
+            <button class="right button addTaskButton">Add new Task</button>
+        </nav>
+
+        <section class="board">
+
+            <div id="toDo" class="task-Column">
+                <div class="Task-Header">
+                    <h2>TO DO</h2> 
+                    <span class="count">2</span>
+                </div>
+
+                <div class="Task-Stack">
+
+                    <div class="Task" draggable="true">
+                        <h3 class="Task-Heading">Heading</h3>
+                        <p class="Task-Description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero velit a dolore. Magni incidunt sequi aut delectus nemo, quia, hic maxime consequatur, corrupti repellendus eaque? Quod obcaecati suscipit alias laudantium.</p>
+                        <button class="deleteTaskButton">Delete</button>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+
+            <div id="inProgress" class="task-Column">
+                <div class="Task-Header">
+                    <h2>In Progress</h2>
+                    <span class="count">Count</span>
+                </div>
+
+                <div class="Task-Stack">
+                </div>
+
+            </div>
+
+            <div id="done" class="task-Column">
+                <div class="Task-Header">
+                    <h2>Done</h2>
+                    <span class="count">Count</span>
+                </div>
+
+                <div class="Task-Stack">
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
