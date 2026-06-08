@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* color */
+    --bg-primary-color: #090909;
+    --bg-button-color: #292929;
+    --bg-button-secondary-color: #8b3737;
+    --bg-task-Column-color: #141414;
+    --bg-task-color: #2b2a2a;
+    --border-primary-color: #f4f4f4;
+    --text-primary-color: #f4f4f4;
+
+
+    /* padding */
+    --nav-padding: 1rem 2rem;
+    --section-padding: 1rem 2rem;
+    --board-padding: 1rem 1rem;
+    --card-padding: 0.5rem 0.5rem;
+    --padding-s: 0.3125rem;
+    --padding-m: 0.625rem;
+    --padding-l: 0.9375rem;
+    --padding-xl: 1.25rem;
+    --padding-xxl: 1.875rem;
+
+    /* spacing */
+    --primary-gap: 1rem;
+
+    /* border Radius*/
+    --border-primary-radius: 1.5rem;
+    --border-secondary-radius: 1rem;
+    --border-radius-s: 0.3125rem;
+    --border-radius-m: 0.625rem;
+    --border-radius-l: 0.9375rem;
+    --border-radius-xl: 1.25rem;
+    --border-radius-xxl: 1.875rem;
+
+    /* font Size*/
+    --font-size-s: 0.3125rem;
+    --font-size-m: 0.625rem;
+    --font-size-l: 0.9375rem;
+    --font-size-xl: 1.25rem;
+    --font-size-xxl: 1.875rem;
+
+
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+}
+
+body{
+    background-color: var(--bg-primary-color);
+    color: var(--text-primary-color);
+}
+
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--primary-gap);
+}
+
+nav{
+    padding: var(--nav-padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    font-size: var(--font-size-xl);
+    font-weight: 400;
+    user-select: none;
+}
+
+.right{
+    background-color: var(--bg-button-color);
+    border: none;
+    outline: none;
+    color: var(--text-primary-color);
+    padding: var(--padding-m) var(--padding-l);
+    border-radius: var(--border-radius-m);
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.right:hover{
+    background-color: #d3d3d3;
+    color: #121212;
+    transform: scale(1.05);
+}
+
+.board{
+    flex-grow: 1;
+    display: flex;
+    padding: var(--section-padding);
+    gap: 2.5rem;
+}
+
+.task-Column{
+    /* var(--border-primary-color) */
+    border: 1px solid var(--border-primary-color);
+    border-radius: var(--border-primary-radius);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: var(--board-padding);
+    gap: 1rem;
+    min-width: 0;
+    background-color: var(--bg-task-Column-color);
+    transition: scale 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.task-Column.hover{
+    border: 1.7px dashed var(--border-primary-color);
+    scale: 1.02;
+}
+
+.Task-Header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    color: var(--text-primary-color);
+    font-size: var(--font-size-l);
+    font-weight: 100;
+    user-select: none;
+}
+
+.Task-Header .count{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #b6b6b6
+}
+
+.Task-Stack{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Task{
+    border: 1px solid var(--border-primary-color);
+    border-radius: var(--border-secondary-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: var(--card-padding);
+    cursor: grab;
+    background-color: var(--bg-task-color);
+}
+
+.Task:active{
+    cursor: grabbing;
+}
+
+.Task .Task-Heading{
+    overflow-wrap: anywhere;
+}
+
+.Task .Task-Description{
+    overflow-wrap: anywhere;
+}
+
+.Task .deleteTaskButton{
+    align-self: flex-end;
+    cursor: pointer;
+    padding: var(--padding-s) var(--padding-m);
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius-s);
+    background-color: var(--bg-button-secondary-color);
+    user-select: none;
+    transition: all 0.3s ease;
+    color: var(--text-primary-color);
+    font-weight: 500;
+}
+
+.Task .deleteTaskButton:hover{
+    background-color: #952525;
+}
+
+
+
